@@ -33,7 +33,7 @@ pipeline {
                     if(artifactExists) {
                         echo "*** File: ${artifactPath}, group: ${pom.groupId}, packaging: ${pom.packaging}, version ${pom.version}";
                         nexusArtifactUploader(
-                            nexusVersion: "nexus2",
+                            nexusVersion: "nexus3",
                             protocol: "http",
                             nexusUrl: "http://192.168.0.6:8081/repository/maven-releases/",
                             groupId: pom.groupId,
