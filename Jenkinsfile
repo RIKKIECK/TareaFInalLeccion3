@@ -56,7 +56,7 @@ pipeline {
      }
 
 post {
-    always {
+    failure {
         slackSend(channel: "#jenkinsdevops", token: "tokenslack", message: "La ejecución del Pipeline ${BUILD_NUMBER} ha finalizado con estado ${currentBuild.result}, mas informacion en ${RUN_DISPLAY_URL} ")
     }
 }
