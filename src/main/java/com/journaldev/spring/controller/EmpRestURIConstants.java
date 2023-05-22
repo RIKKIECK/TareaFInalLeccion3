@@ -1,5 +1,7 @@
 package com.journaldev.spring.controller;
 
+/*commit*/
+
 public class EmpRestURIConstants {
 
 	public static final String DUMMY_EMP = "/rest/emp/dummy";
